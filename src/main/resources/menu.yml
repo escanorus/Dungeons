@@ -1,0 +1,41 @@
+fractions:
+  title: "§f七七七七七七七七ㇺ"
+  size: 54
+
+  icons:
+    - "warrior-fraction-icon"
+    - "wizard-fraction-icon"
+    - "hunter-fraction-icon"
+
+warrior-fraction-icon:
+  title: "Название1"
+  position: 0
+  texture: ""
+  description:
+    - "описание 1"
+    - "описание 2"
+    - "описание 3"
+    - "описание 4"
+    - "описание 5"
+    -
+wizard-fraction-icon:
+  title: "Название2"
+  position: 1
+  texture: ""
+  description:
+    - "описание 1"
+    - "описание 2"
+    - "описание 3"
+    - "описание 4"
+    - "описание 5"
+
+hunter-fraction-icon:
+  title: "Название3"
+  position: 2
+  texture: ""
+  description:
+    - "описание 1"
+    - "описание 2"
+    - "описание 3"
+    - "описание 4"
+    - "описание 5"

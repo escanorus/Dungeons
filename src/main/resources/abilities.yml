@@ -1,0 +1,20 @@
+common:
+  - "ability-1"
+  - "ability-2"
+  - "ability-3"
+rare:
+  - "ability-1"
+  - "ability-2"
+  - "ability-3"
+epic:
+  - "ability-1"
+  - "ability-2"
+  - "ability-3"
+legendary:
+  - "ability-1"
+  - "ability-2"
+  - "ability-3"
+relic:
+  - "ability-1"
+  - "ability-2"
+  - "ability-3"

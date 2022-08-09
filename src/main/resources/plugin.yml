@@ -1,0 +1,10 @@
+name: Dungeons
+version: '${project.version}'
+main: ru.aracle.dungeons.Dungeons
+api-version: 1.19
+prefix: Dungeons
+authors: [ aracle ]
+description: Core plugin for Dungeons - minecraft server
+commands:
+  dungeons:
+    description: Main plugin command

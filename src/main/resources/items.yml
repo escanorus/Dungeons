@@ -1,0 +1,64 @@
+items:
+  - "warrior-sword"
+  - "wizard-staff"
+  - "hunter-bow"
+
+warrior-sword:
+  type: "sword"
+  title: "§#f0db24Меч воина"
+  description:
+    - "§#5364fcОписание предмета:"
+    - "§fЭтим мечом могут владеть"
+    - "§fтолько истинные воины!"
+    - "§#5364fcХарактеристики и требования:"
+    - "§#8c8c8c■ §fУровень предмета: §#f0db24%upgrade% §#8c8c8cиз §#f0db24%max-upgrade%"
+    - "§#8c8c8c■ §fРедкость предмета: %rarity%"
+    - "§#8c8c8c■ §fУрон от атаки: §#f0db24%factor%"
+    - "§#8c8c8c■ §fКласс персонажа: %fraction%"
+    - "§#8c8c8c■ §fУровень персонажа: §#f0db24%level%"
+    - "§#8c8c8c■ §fРанг персонажа: §#f0db24%rang%"
+    - "§#8c8c8c■ §#edda32%cost% §#8c8c8c §#48afdb%crystals% §#8c8c8c §#9c48db%shards% §#8c8c8c"
+  fraction: "warrior"
+  rarity: "common"
+  abilities: true
+
+wizard-staff:
+  type: "staff"
+  title: "§#ba3ce8Посох мага"
+  description:
+    - "§#5364fcОписание предмета:"
+    - "§fЭтим посохом могут владеть"
+    - "§fтолько истинные маги!"
+    - "§#5364fcХарактеристики и требования:"
+    - "§#8c8c8c■ §fУровень предмета: §#f0db24%upgrade% §#8c8c8cиз §#f0db24%max-upgrade%"
+    - "§#8c8c8c■ §fРедкость предмета: %rarity%"
+    - "§#8c8c8c■ §fУрон от атаки: §#f0db24%factor%"
+    - "§#8c8c8c■ §fКласс персонажа: %fraction%"
+    - "§#8c8c8c■ §fУровень персонажа: §#f0db24%level%"
+    - "§#8c8c8c■ §fРанг персонажа: §#f0db24%rang%"
+    - "§#8c8c8c■ §#edda32%cost% §#8c8c8c §#48afdb%crystals% §#8c8c8c §#9c48db%shards% §#8c8c8c"
+  fraction: "wizard"
+  rarity: "common"
+  abilities: true
+
+hunter-bow:
+  type: "bow"
+  title: "§#4ad468Лук охотника"
+  description:
+    - "§#5364fcОписание предмета:"
+    - "§fЭтим луком могут владеть"
+    - "§fтолько истинные охотники!"
+    - "§#5364fcХарактеристики и требования:"
+    - "§#8c8c8c■ §fУровень предмета: §#f0db24%upgrade% §#8c8c8cиз §#f0db24%max-upgrade%"
+    - "§#8c8c8c■ §fРедкость предмета: %rarity%"
+    - "§#8c8c8c■ §fУрон от атаки: §#f0db24%factor%"
+    - "§#8c8c8c■ §fКласс персонажа: %fraction%"
+    - "§#8c8c8c■ §fУровень персонажа: §#f0db24%level%"
+    - "§#8c8c8c■ §fРанг персонажа: §#f0db24%rang%"
+    - "§#8c8c8c■ §#edda32%cost% §#8c8c8c §#48afdb%crystals% §#8c8c8c §#9c48db%shards% §#8c8c8c"
+  fraction: "hunter"
+  rarity: "common"
+  abilities: true
+
+
+

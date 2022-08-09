@@ -1,0 +1,105 @@
+connection:
+  connect: true
+  server: "lobby"
+  address: "localhost"
+  port: "3306"
+  database: "adventures"
+  username: "adventures"
+  password: "4xiDbb3gLk5vUDkU"
+  publicKeyRetrieval: false
+  ssl: false
+  minimumIdle: 1
+  maximumPoolSize: 100
+  connectionTimeout: 1500
+
+permissions:
+  manager: "dungeons.manager"
+  moderator: "dungeons.moderator"
+
+bounds:
+  common:
+    upgrade: 25
+    min-cost: 5
+    max-cost: 15
+    min-shards: 5
+    max-shards: 15
+    min-damage: 3
+    max-damage: 6
+    speed: -2
+    min-crystals: 1
+    max-crystals: 5
+  rare:
+    upgrade: 50
+    min-cost: 10
+    max-cost: 20
+    min-shards: 10
+    max-shards: 20
+    min-damage: 5
+    max-damage: 10
+    speed: -2
+    min-crystals: 5
+    max-crystals: 10
+  epic:
+    upgrade: 100
+    min-cost: 20
+    max-cost: 40
+    min-shards: 20
+    max-shards: 50
+    min-damage: 10
+    max-damage: 15
+    speed: -1
+    min-crystals: 10
+    max-crystals: 20
+  legendary:
+    upgrade: 150
+    min-cost: 40
+    max-cost: 60
+    min-shards: 50
+    max-shards: 80
+    min-damage: 15
+    max-damage: 20
+    speed: -1
+    min-crystals: 20
+    max-crystals: 40
+  relic:
+    upgrade: 200
+    min-cost: 60
+    max-cost: 100
+    min-shards: 80
+    max-shards: 120
+    min-damage: 18
+    max-damage: 25
+    speed: 0
+    min-crystals: 40
+    max-crystals: 60
+
+fractions:
+  - "warrior"
+  - "wizard"
+  - "hunter"
+
+rarity:
+  - "common"
+  - "rare"
+  - "epic"
+  - "legendary"
+  - "relic"
+
+statements:
+  tables:
+    - "CREATE TABLE IF NOT EXISTS userdata (uuid VARCHAR(36), username VARCHAR(36), pass VARCHAR(36), status VARCHAR(36), server VARCHAR(36), fraction VARCHAR(20), clan VARCHAR(20), PRIMARY KEY  (uuid))"
+    - "CREATE TABLE IF NOT EXISTS items (id int(11) NOT NULL auto_increment, iid VARCHAR(36), fraction VARCHAR(36), rarity VARCHAR(20), abilities TEXT, upgrade int(3), level int(7), rang int(7), cost int(7), shards int(7), factor int(7), speed int(2), crystals int(7), PRIMARY KEY  (id))"
+    - "CREATE TABLE IF NOT EXISTS profile (uuid VARCHAR(36), fraction VARCHAR(20), inventory TEXT, location VARCHAR(36), level INT(5), rang INT(5), gold INT(7), crystals INT(7), shards INT(7), arcana INT(5), endurance INT(5), kills INT(7), deaths INT(7), wins INT(7), losses INT(7))"
+
+  select-id-items: "SELECT id FROM items ORDER BY id DESC LIMIT 1"
+  insert-items: "INSERT INTO items VALUES ('%id%', '%iid%', '%fraction%', '%rarity%', '%abilities%', %upgrade%, %level%, %rang%, %cost%, %shards%, %factor%, %speed%, %crystals%)"
+  select-items: "SELECT * FROM items WHERE id = '%condition%'"
+  update-items: "UPDATE items SET upgrade = %upgrade%, level = %level%, rang = %rang%, cost = %cost%, shards = %shards%, factor = %factor%, crystals = %crystals% WHERE id = %condition%"
+
+  select-userdata: "SELECT username, pass, status, server, fraction, clan FROM userdata WHERE uuid = '%condition%'"
+  insert-userdata: "INSERT INTO userdata VALUES ('%uuid%', '%username%', '%pass%', '%status%', '%server%', '%fraction%', '%clan%')"
+  update-userdata: "UPDATE userdata SET username = '%username%', pass = '%pass%', status = '%status%', server = '%server%', fraction = '%fraction%', clan = '%clan%' WHERE uuid = '%condition%'"
+
+  select-profile: "SELECT inventory, location, level, rang, gold, crystals, shards, arcana, endurance, kills, deaths, wins, losses FROM profile WHERE uuid = '%uuid-condition%' AND fraction = '%fraction-condition%'"
+  insert-profile: "INSERT INTO profile VALUES ('%uuid%', '%fraction%', '%inventory%', '%location%', %level%, %rang%, %gold%, %crystals%, %shards%, %arcana%, %endurance%, %kills%, %deaths%, %wins%, %losses%)"
+  update-profile: "UPDATE profile SET inventory = '%inventory%', location = '%location%', level = %level%, rang = %rang%, gold = %gold%, crystals = %crystals%, shards = %shards%, arcana = %arcana%, endurance = %endurance%, kills = %kills%, deaths = %deaths%, wins = %wins%, losses = %losses% WHERE uuid = '%uuid-condition%' AND fraction = '%fraction-condition%'"

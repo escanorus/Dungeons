@@ -1,0 +1,36 @@
+messages:
+  no-pass: "У вас нет пропуска на сервер. Приобрести пропуск: крутой-сайт.ru"
+  logged-in: "Игрок %player% зашел в игру. Пропуск: %pass%, статус: %status%, фракция: %fraction%, клан: %clan%"
+  logged-out: "Игрок %player% покинул игру. Пропуск: %pass%, статус: %status%, фракция: %fraction%, клан: %clan%"
+  used-menu: "Перед выходом игрок %player% использовал меню: %menu%"
+  no-permission: "У вас нет прав на использование этого."
+  not-online: "Указанный игрок не онлайн."
+  loading-error: "Ошибка авторизации: невозможно загрузить данные пользователя."
+  command-usage: "Использование команды: /dungeons аргумент"
+  command-usage-fractions: "Использование команды: /dungeons fractions аргумент"
+  command-usage-fractions-drop: "Использование команды: /dungeons fractions drop игрок"
+  command-fractions-drop: "Фракция игрока %player% успешно удалена."
+  choose-fraction-title: "Вы выбрали фракцию \"%fraction%\""
+  choose-fraction-subtitle: "Вы выбрали фракцию \"%fraction%\""
+  command-usage-items: "Использование команды: /dungeons items аргумент"
+  command-usage-generate: "Использование команды: /dungeons items generate id-предмета"
+  command-usage-generate-not-exists: "Такого предмета не существует."
+  server-stopped: "Сервер на котором вы находились был отключён."
+  configurations-reload: "Конфигурации были успешно перезагружены."
+
+
+abilities: "Способности:"
+
+translations:
+
+  fractions:
+    warrior: "воин"
+    wizard: "маг"
+    hunter: "лучник"
+
+  rarity:
+    common: "§#d6d6d6обычный"
+    rare: "§#3a74c9редкий"
+    epic: "§#9726edэпический"
+    legendary: "§#ebd82fлегендарный"
+    relic: "§#f73e4aреликвия"
