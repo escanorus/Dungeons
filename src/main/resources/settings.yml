@@ -3,9 +3,9 @@ connection:
   server: "lobby"
   address: "localhost"
   port: "3306"
-  database: "adventures"
-  username: "adventures"
-  password: "4xiDbb3gLk5vUDkU"
+  database: "database"
+  username: "username"
+  password: "password"
   publicKeyRetrieval: false
   ssl: false
   minimumIdle: 1
